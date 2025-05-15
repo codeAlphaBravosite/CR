@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CreateMode</title>
+    
+    <link rel="icon" href="./icon-192x192.png" type="image/png">
+    <link rel="shortcut icon" href="./icon-192x192.png" type="image/png">
+    <link rel="apple-touch-icon" href="./icon-192x192.png">
+
+    <link rel="manifest" href="./manifest.webmanifest">
+    
     <style>
         /* --- GLOBAL STYLES & VARIABLES (Pixel Progress Inspired) --- */
         :root {
@@ -1615,5 +1622,20 @@
         });
 
     </script>
+
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration.scope);
+        })
+        .catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    });
+  }
+    </script>
+    
 </body>
 </html>
