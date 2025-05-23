@@ -1834,7 +1834,7 @@
                 const newProject = {
                     id, title, deadline, totalValue, valueEarned: 0, isCompleted: false, 
                     completionTimestamp: null, priority: false, tasks: tasksFromModal, 
-                    ui_isExpanded: false, ui_scrollPosition: 0, isArchived: false, creationTimestamp: Date.now()
+                    ui_isExpanded: true, ui_scrollPosition: 0, isArchived: false, creationTimestamp: Date.now()
                 };
                 distributeValueToTasks(newProject);
                 appData.projects.push(newProject);
