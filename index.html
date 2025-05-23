@@ -431,6 +431,14 @@
         .task-item:last-child, .subtask-item:last-child { border-bottom: none; }
         .subtask-item { margin-left: 25px; }
         .task-description { flex-grow: 1; font-size: 0.95em; }
+        
+        /* ADD THIS NEW RULE FOR MAIN TASK DESCRIPTIONS */
+        .task-item .task-description {
+            font-size: 1em;    /* Makes it slightly larger (e.g., 15px if base is 15px) */
+            font-weight: 500;  /* Makes it semi-bold, similar to button text */
+        }
+         /* END OF ADDED RULE */
+        
         .task-value-chip {
             font-size: 0.85em;
             font-weight: 500;
