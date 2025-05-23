@@ -108,7 +108,10 @@
             border-bottom: 1px solid var(--border-color);
             margin-top: 25px;
         }
-        h2:first-of-type { margin-top: 0; }
+        /*h2:first-of-type { margin-top: 0; }*/
+        .app-container-wrapper > .quest-list-section:first-of-type > h2 {
+            margin-top: 0; /* Only the H2 of the very first quest list section */
+        }
         h3 { font-size: 1.1em; }
 
         button, .button {
